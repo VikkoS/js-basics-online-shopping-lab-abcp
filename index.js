@@ -18,12 +18,12 @@ function addToCart(item) {
 }
 
 function viewCart() {
-  let message = '';
+  let message = 'In your cart, you have, ';
   if (cart.length === 0) {
     console.log('Your shopping cart is empty.');
   } else {
     for (let i = 0; i < cart.length; i++) {
-      
+      message+=`${cart[i].keys()} at $${cart[i].}`
     }
   }
 }
