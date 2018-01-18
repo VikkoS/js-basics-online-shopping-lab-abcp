@@ -30,8 +30,10 @@ function viewCart() {
         } else {
          for (let i = 1; i< cart.length-1; i++) {
            message+=`, ${Object.keys(cart[i])} at $${Object.values(cart[i])}`;
+         
+         
           }
-         message+=`, and ${Object.keys(cart[cart.length-1])} at $${Object.values(cart[cart.length-1])}`;
+        
         
       }
   }
