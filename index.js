@@ -26,8 +26,8 @@ function viewCart() {
       message+=`${Object.keys(cart[i])} at $${Object.values(cart[i])}`
     }
   }
-  message+='.';
-  console.log(message);
+  
+  
 }
 
 function total() {
