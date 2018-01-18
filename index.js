@@ -50,7 +50,7 @@ function total() {
 function removeFromCart(item) {
   if (cart[i].hasOwnProperty(item)){
   for (let i = 0; i < cart.length; i++) {
-    if (cart[i].hasOwnProperty(item)) {
+    if (Object.keys(cart[i]) === item) {
       cart.splice(i, 1);
       return cart;
     } else {
