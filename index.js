@@ -22,12 +22,12 @@ function viewCart() {
   if (cart.length === 0) {
     console.log('Your shopping cart is empty.');
   } else {
+    
+      message+=`${Object.keys(cart[0])} at $${Object.values(cart[0])}`;
     if (cart.length === 1) {
-      message+=`${Object.keys(cart[1])} at $${Object.values(cart[1])}`;
-    } else {
-      let arraySize = (cart.length)-1;
-      for (let i = 0; i < arraySize; i++) {
-      message+=`${Object.keys(cart[i])} at $${Object.values(cart[i])}` ;
+     
+      for (let i = 1; i < cart.length; i++) {
+      message+=` and ${Object.keys(cart[1])} at $${Object.values(cart[1])}` ;
     }
       
     }
