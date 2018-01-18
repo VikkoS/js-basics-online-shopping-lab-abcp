@@ -24,16 +24,16 @@ function viewCart() {
   } else {
     
       message+=`${Object.getOwnPropertyNames(cart[0]).toString()} at $${Object.values(cart[0]).toString()}`;
-    if (cart.length === 1) {
+      if (cart.length === 2) {
       message+=` and ${Object.keys(cart[1])} at $${Object.values(cart[1])}`;
-    } else {
-      let arraySize = cart.length;
-      for (let i = 1; i< arraySize-1; i++) {
-        message+=`, ${Object.keys(cart[i])} at $${Object.values(cart[i])}`;
+      } else {
+        let arraySize = cart.length;
+         for (let i = 1; i< arraySize-1; i++) {
+           message+=`, ${Object.keys(cart[i])} at $${Object.values(cart[i])}`;
+        }
+        message+=`, and ${Object.keys(cart[arraySize])} at $${Object.values(cart[arraySize])}`;
       }
-      message+=`, and ${Object.keys(cart[arraySize])} at $${Object.values(cart[arraySize])}`;
-    }
-  }
+   }
   message+='.';
   console.log(message);
 }
