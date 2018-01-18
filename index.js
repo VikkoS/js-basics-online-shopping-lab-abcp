@@ -52,7 +52,7 @@ function removeFromCart(item) {
     if (cart[i].hasOwnProperty(item)) {
       
     } else {
-      console.log();
+      console.log('');
     }
   }
 }
