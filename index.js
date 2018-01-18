@@ -25,13 +25,13 @@ function viewCart() {
     
       message+=`${Object.keys(cart[0])} at $${Object.values(cart[0])}`;
       if (cart.length === 2) {
-      message+=` and ${Object.keys(cart[1]).toString()} at $${Object.values(cart[1]).toString()}`;
+      message+=` and ${Object.keys(cart[1])} at $${Object.values(cart[1])}`;
       } else {
         let arraySize = cart.length;
          for (let i = 1; i< arraySize-1; i++) {
-           message+=`, ${Object.keys(cart[i]).toString()} at $${Object.values(cart[i]).toString()}`;
+           message+=`, ${Object.keys(cart[i])} at $${Object.values(cart[i])}`;
         }
-        message+=`, and ${Object.keys(cart[arraySize]).toString()} at $${Object.values(cart[arraySize]).toString()}`;
+        message+=`, and ${Object.keys(cart[arraySize])} at $${Object.values(cart[arraySize])}`;
       }
    }
   message+='.';
