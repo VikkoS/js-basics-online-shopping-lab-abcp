@@ -29,9 +29,9 @@ function viewCart() {
       } else {
         let arraySize = cart.length;
          for (let i = 1; i< arraySize-1; i++) {
-           message+=`, ${Object.keys(cart[i]).toString()} at $${Object.values(cart[i]).}`;
+           message+=`, ${Object.keys(cart[i]).toString()} at $${Object.values(cart[i]).toString()}`;
         }
-        message+=`, and ${Object.keys(cart[arraySize])} at $${Object.values(cart[arraySize])}`;
+        message+=`, and ${Object.keys(cart[arraySize]).} at $${Object.values(cart[arraySize])}`;
       }
    }
   message+='.';
