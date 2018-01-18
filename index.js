@@ -27,15 +27,15 @@ function viewCart() {
     if (cart.length === 1) {
       message+=` and ${Object.keys(cart[1])} at $${Object.values(cart[1])}`;
     } else {
-      let arraySize = (cart.length)-1;
-      for (let i = 1; i< arraySize; i++) {
+      let arraySize = cart.length;
+      for (let i = 1; i< arraySize-1; i++) {
         message+=`, ${Object.keys(cart[i])} at $${Object.values(cart[i])}`;
       }
-      message+=
+      message+=`, and ${Object.keys(cart[arraySize])} at $${Object.values(cart[arraySize])}`;
     }
   }
-  
-  
+  message+='.';
+  return message;
 }
 
 function total() {
