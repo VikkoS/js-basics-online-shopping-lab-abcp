@@ -22,7 +22,11 @@ function viewCart() {
   if (cart.length === 0) {
     console.log('Your shopping cart is empty.');
   } else {
-    for (let i = 0; i < cart.length; i++) {
+    if (cart.length === 1) {
+      
+    }
+    let arraySize = (cart.length)-1;
+    for (let i = 0; i < arraySize; i++) {
      message+=`${Object.keys(cart[i])} at $${Object.values(cart[i])}` ;
     }
   }
