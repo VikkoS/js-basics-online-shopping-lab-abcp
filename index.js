@@ -25,11 +25,11 @@ function viewCart() {
     
       message+=`${Object.keys(cart[0])} at $${Object.values(cart[0])}`;
     if (cart.length === 1) {
-     
-      for (let i = 1; i < cart.length; i++) {
-      message+=` and ${Object.keys(cart[1])} at $${Object.values(cart[1])}` ;
-    }
-      
+      message+=` and ${Object.keys(cart[1])} at $${Object.values(cart[1])}`;
+    } else {
+      for (let i = 2; i< cart.length; i++) {
+        message+=
+      }
     }
   }
   
