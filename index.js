@@ -42,7 +42,7 @@ function viewCart() {
 function total() {
   let summa = 0;
   for (let i = 0; i < cart.length; i++) {
-    summa+=Object.values(cart[i]);
+    summa+=parseInt(Object.values(cart[i]));
   }
   return summa;
 }
