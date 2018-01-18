@@ -31,9 +31,9 @@ function viewCart() {
          for (let i = 1; i< (cart.length-1); i++) {
            message+=`, ${Object.keys(cart[i])} at $${Object.values(cart[i])}`;
         }
-        let f = cart.length;
+        
        if (cart.length > 1) {
-        message+=`, and ${Object.keys(cart[f-1])} at $${Object.values(cart[f-1])}`;
+        message+=`, and ${Object.keys(cart[cart.length])} at $${Object.values(cart[cart.length])}`;
        }
       }
    }
