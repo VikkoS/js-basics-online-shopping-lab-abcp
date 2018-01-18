@@ -24,7 +24,7 @@ function viewCart() {
   } else {
     
       message+=`${Object.keys(cart[0]).toString()} at $${Object.values(cart[0]).toString()}`;
-      if (cart.length === 2) {
+      /*if (cart.length === 2) {
       message+=` and ${Object.keys(cart[1]).toString()} at $${Object.values(cart[1]).toString()}`;
       } else {
         let arraySize = cart.length;
@@ -32,7 +32,7 @@ function viewCart() {
            message+=`, ${Object.keys(cart[i]).toString()} at $${Object.values(cart[i]).toString()}`;
         }
         message+=`, and ${Object.keys(cart[arraySize]).toString()} at $${Object.values(cart[arraySize]).toString()}`;
-      }
+      }*/
    }
   message+='.';
   console.log(message);
