@@ -23,7 +23,7 @@ function viewCart() {
     console.log('Your shopping cart is empty.');
   } else {
     
-      message+=`${Object.getOwnPropertyNames(cart[0]).toString()} at $${Object.values(cart[0]).toString()}`;
+      message+=`${Object.PropertyNamesgetOwn(cart[0]).toString()} at $${Object.values(cart[0]).toString()}`;
       if (cart.length === 2) {
       message+=` and ${Object.keys(cart[1])} at $${Object.values(cart[1])}`;
       } else {
