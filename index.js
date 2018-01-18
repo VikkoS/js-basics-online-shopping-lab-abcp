@@ -24,9 +24,9 @@ function viewCart() {
   } else {
   
       message+=`${Object.keys(cart[0])} at $${Object.values(cart[0])}`;
-     /* if (cart.length === 2) {
+      if (cart.length === 2) {
       message+=` and ${Object.keys(cart[1])} at $${Object.values(cart[1])}`;
-      } else {
+      } /*else {
         let arraySize = cart.length;
          for (let i = 1; i< arraySize-1; i++) {
            message+=`, ${Object.keys(cart[i])} at $${Object.values(cart[i])}`;
