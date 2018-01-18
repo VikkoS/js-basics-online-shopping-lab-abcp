@@ -23,7 +23,7 @@ function viewCart() {
     console.log('Your shopping cart is empty.');
   } else {
     if (cart.length === 1) {
-      
+      message+=``
     }
     let arraySize = (cart.length)-1;
     for (let i = 0; i < arraySize; i++) {
